@@ -11,4 +11,10 @@ public class DemoController {
         return "Hello Jenkins!";
     }
 
+    @GetMapping("/bug")
+    public String bug() {
+        int value = 200/0;
+        return "Bug";
+    }
+
 }
